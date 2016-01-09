@@ -6,4 +6,6 @@ A simple template which shows a message to notify users about the change of loca
 
 Usage
 -----
-This script is super simple. Just change the configuration in `index.html` (on line 12-13) and you are good to go.
+This script is super simple. Just change the configuration in `config.js` and you are good to go.
+
+Detailed instructions are stated in `config.js`
