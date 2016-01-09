@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>This site has been moved.</title>
+  </head>
+  <body>
+    <center>
+      <p id="msg">
+      </p>
+    </center>
+    <script>
+      /*** Configuration ***/
+      var newLocation = "http://www.ycmjason.com/mahjongCalculator";
+      var redirectAfter = 3;
+    </script>
+
+    <script>
+      /*** You might not need to change the code below ***/
+      var msg = function(sec){
+        return 'This site has been moved to <a href="'+newLocation+'">'+newLocation+'</a>.<br>You will be redirected in '+sec+' seconds.';
+      };
+      var counter = redirectAfter;
+      document.getElementById('msg').innerHTML=msg(counter);
+      setInterval(function(){
+        if(counter>0){
+          document.getElementById('msg').innerHTML=msg(--counter);
+        }
+        if(counter==0){
+          window.location.assign(newLocation);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
