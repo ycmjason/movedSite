@@ -1,5 +1,5 @@
-Moved Site
-==========
+Redirect Script
+===============
 A simple template which shows a message to notify users about the change of location and redirects users to the new location after 3 seconds. (or however long you want it to take.)
 
 ----------
